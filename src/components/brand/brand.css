@@ -1,0 +1,10 @@
+.brand {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.brand div {
+    margin: 1rem;
+    min-width: 120px;
+}

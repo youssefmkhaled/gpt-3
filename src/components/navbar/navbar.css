@@ -1,0 +1,124 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links_logo {
+    margin-right: 2rem;
+}
+.links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+.links_container{
+    display: flex;
+}
+.navbar_sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.links_container p,
+.navbar_sign p,
+.menu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+.links_container p a {
+    transition-duration: 0.5s;
+}
+.links_container p a:hover {
+    color: #FF8A71;
+}
+
+.navbar_sign button,
+.menu_container button{
+    padding: 0.5rem 1rem;
+    background: #FF4820;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.menu{
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+.menu svg {
+    cursor: pointer;
+}
+.menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.menu_container p{
+    margin: 1rem 0;
+}
+.menu_sign{
+    display: none;
+}
+
+
+@media  (max-width: 1050px) {
+    .links_container {
+        display: none;
+    }
+    .menu {
+        display: flex;
+    }
+}
+
+@media  (max-width: 700px) {
+    .navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media  (max-width: 550px) {
+    .navbar {
+        padding: 2rem;
+    }
+
+    .navbar_sign {
+        display: none;
+    }
+
+    .menu_container {
+        top: 20px;
+    }
+
+    .menu_sign {
+        display: block;
+    }
+}

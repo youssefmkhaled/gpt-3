@@ -1,0 +1,111 @@
+
+.gpt3 {
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.first-sec .feature{
+    margin: 0;
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+
+.first-sec .text p {
+    max-width: 731px;
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+}
+.second-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+    flex-wrap: wrap;
+}
+.second-sec h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    max-width: 510px;
+}
+.second-sec p{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    flex-basis: 15%;
+    
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.third_sec{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.third_sec .feature {
+    flex-basis: 32%;
+    margin: 2rem 0;
+}
+.third_sec .text {
+    margin-top: 2rem;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-text);
+}
+
+
+
+@media (max-width: 650px) {
+    .first-sec .feature{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .first-sec .text {
+        flex-basis: 50%;
+    }
+    .second-sec h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .second-sec p {
+        flex-basis: 80%;
+    }
+    .gpt3{
+        margin:4rem 1rem;
+    }
+    .third_sec .feature {
+        flex-basis: 48%;
+    }
+}
+@media  (max-width: 490px) {
+    
+    .first-sec .text{
+        flex-basis: 100%;
+    }
+    .third_sec .feature {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 350px) {
+    .second-sec h1{
+        margin-bottom: 1rem;
+    }
+}
